@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
 
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="388dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.813">
+
+        <EditText
+            android:id="@+id/addTasks_ed"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Enter your task"
+         />
+
+        <EditText
+            android:id="@+id/addDetails_ed"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Enter your details"
+  />
+        <Button
+            android:id="@+id/saveTasks_btn"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/white"
+            android:text="SAVE"
+            android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/white"
+            android:text="BACK"
+            android:layout_height="50dp"/>
+
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

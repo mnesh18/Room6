@@ -8,4 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <color name="pink">#f0d7d5</color>
+    <color name="green">#D5F0D7</color>
+
+
+
 </resources>

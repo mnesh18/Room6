@@ -4,33 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#C8E9E7"
+    android:background="@drawable/bg"
     >
 
 
     <LinearLayout
-        android:layout_width="344dp"
-        android:layout_height="200dp"
+        android:layout_width="290dp"
+        android:layout_height="207dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.719">
+        app:layout_constraintVertical_bias="0.637">
 
         <Button
             android:id="@+id/btn_home_task"
-            android:text="Tasks"
-            android:backgroundTint="#2B6E69"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#D5F0D7"
 
-           />
+            android:text="Add Tasks"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/progre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:backgroundTint="#f0d7d5"
+            android:text="View Tasks"
+            android:textColor="@color/white"
+            android:textSize="19dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
