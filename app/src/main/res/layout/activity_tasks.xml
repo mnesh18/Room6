@@ -22,6 +22,8 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:hint="Enter your task"
+            android:paddingStart="10dp"
+            android:background="@drawable/custom_texteditstyle"
          />
 
         <EditText
@@ -29,6 +31,9 @@
             android:layout_width="match_parent"
             android:layout_height="120dp"
             android:hint="Enter your details"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10dp"
+            android:background="@drawable/custom_texteditstyle"
   />
         <Button
             android:id="@+id/saveTasks_btn"
@@ -36,13 +41,17 @@
             android:backgroundTint="@color/pink"
             android:textColor="@color/white"
             android:text="SAVE"
+            android:background="@drawable/custom_button"
+            android:layout_marginTop="5dp"
             android:layout_height="50dp"/>
         <Button
             android:id="@+id/back_btn"
             android:layout_width="match_parent"
             android:backgroundTint="@color/pink"
             android:textColor="@color/white"
-            android:text="BACK"
+            android:text="Cancel"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/custom_button"
             android:layout_height="50dp"/>
 
 
