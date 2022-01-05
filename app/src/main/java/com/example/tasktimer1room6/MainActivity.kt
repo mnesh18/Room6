@@ -7,18 +7,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
-        // save basma ...............
-        /*
-        Basma
-        Muna 2
-
-        basma test 4
 
 
-Muna 5
-
-M7
-
-        */
     }
 }
