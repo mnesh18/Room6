@@ -23,10 +23,9 @@
             android:id="@+id/btn_home_task"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#D5F0D7"
-
             android:text="Add Tasks"
             android:textColor="@color/white"
+            android:background="@drawable/custom_buttontwo"
             android:textSize="19dp" />
 
         <Space
@@ -37,9 +36,9 @@
             android:id="@+id/progre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#f0d7d5"
             android:text="View Tasks"
             android:textColor="@color/white"
+            android:background="@drawable/custom_button"
             android:textSize="19dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
