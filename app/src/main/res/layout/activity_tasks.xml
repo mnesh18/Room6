@@ -45,7 +45,7 @@
             android:layout_marginTop="5dp"
             android:layout_height="50dp"/>
         <Button
-            android:id="@+id/back_btn"
+            android:id="@+id/cancel_btn"
             android:layout_width="match_parent"
             android:backgroundTint="@color/pink"
             android:textColor="@color/white"
