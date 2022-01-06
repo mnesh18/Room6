@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.637">
 
         <Button
-            android:id="@+id/btn_home_task"
+            android:id="@+id/btn_addTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add Tasks"
@@ -33,7 +33,7 @@
             android:layout_height="20dp" />
 
         <Button
-            android:id="@+id/progre"
+            android:id="@+id/btn_viewTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="View Tasks"

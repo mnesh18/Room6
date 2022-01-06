@@ -9,22 +9,34 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="405dp"
-        android:layout_height="621dp"
+        android:layout_height="553dp"
         android:layout_margin="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btn_ViewTask"
-        android:layout_width="364dp"
-        android:layout_height="51dp"
-        android:text="BACK"
-        android:textSize="18dp"
-        android:textColor="@color/white"
-        android:background="@drawable/custom_buttontwo"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <TextView
+        android:id="@+id/total_tv"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_back2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
+
+    <Button
+        android:id="@+id/btn_back2"
+        android:layout_width="364dp"
+        android:layout_height="51dp"
+        android:background="@drawable/custom_buttontwo"
+        android:text="BACK"
+        android:textColor="@color/white"
+        android:layout_marginBottom="12dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.659"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.newTheme">
         <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/title_activity_home"
+            android:theme="@style/Theme.newTheme.NoActionBar" />
+        <activity
+            android:name=".ViewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="true" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
