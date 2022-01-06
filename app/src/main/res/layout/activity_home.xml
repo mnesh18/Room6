@@ -4,41 +4,79 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
-    >
+    android:background="@drawable/bg">
 
-
-    <LinearLayout
-        android:layout_width="290dp"
-        android:layout_height="207dp"
-        android:orientation="vertical"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvTaskItem"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.637">
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btn_home_task"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Add Tasks"
-            android:textColor="@color/white"
-            android:background="@drawable/custom_buttontwo"
-            android:textSize="19dp" />
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_margin="12dp">
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/progre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="View Tasks"
-            android:textColor="@color/white"
-            android:background="@drawable/custom_button"
-            android:textSize="19dp" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvTaskItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Task"
+                android:textSize="25dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                 />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTotalTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Total Time:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"
+                    android:textColor="#FFF0D7D5" />
+
+                <TextView
+                    android:id="@+id/tvCountTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00:00"
+                    android:textStyle="bold"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+<ImageView
+    android:id="@+id/ivTaskItem"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:layout_margin="8dp"
+    android:src="@drawable/arrow_forward" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
