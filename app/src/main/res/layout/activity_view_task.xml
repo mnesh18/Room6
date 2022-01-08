@@ -12,24 +12,45 @@
         android:layout_height="0dp"
         android:layout_margin="10dp"
         android:background="@color/green"
-        app:layout_constraintBottom_toTopOf="@+id/total_tv"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
-    <TextView
-        android:id="@+id/total_tv"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Total : 00:00:00"
-        android:textSize="24dp"
-        android:textStyle="bold"
-        android:textAlignment="center"
+        android:orientation="horizontal"
         android:layout_margin="20dp"
+        android:gravity="center"
         app:layout_constraintBottom_toTopOf="@+id/btn_back2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/total_tv"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Total : "
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        <Chronometer
+            android:id="@+id/ch_totalTimer"
+            android:layout_width="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="24dp"
+            android:format="00:%s"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <Button
         android:id="@+id/btn_back2"

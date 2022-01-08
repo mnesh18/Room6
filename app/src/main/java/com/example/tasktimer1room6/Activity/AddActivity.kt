@@ -40,7 +40,7 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun AddNewTask() {
-        val test = tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString(), "00:00:00"))
+        val test = tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString(), "0"))
         if (test != null){
             Toast.makeText(this@AddActivity, "Added successfully", Toast.LENGTH_SHORT).show()
             addDetails_ed.clearFocus()
