@@ -39,8 +39,8 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun AddNewTask() {
-        tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString()))
+        tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString(), "00:00:00"))
+        val intent = Intent(this , HomeActivity::class.java)
+        startActivity(intent)
     }
-
-
 }
