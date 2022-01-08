@@ -10,49 +10,56 @@
         android:layout_width="396dp"
         android:layout_height="388dp"
         android:orientation="vertical"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.813">
+        app:layout_constraintVertical_bias="0.699">
 
         <EditText
             android:id="@+id/addTasks_ed"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:hint="Enter your task"
-            android:paddingStart="10dp"
+            android:layout_margin="30dp"
             android:background="@drawable/custom_texteditstyle"
-         />
+            android:hint="Enter your task"
+            android:paddingStart="10dp" />
 
         <EditText
             android:id="@+id/addDetails_ed"
             android:layout_width="match_parent"
-            android:layout_height="120dp"
-            android:hint="Enter your details"
-            android:layout_marginTop="10dp"
-            android:paddingStart="10dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="30dp"
             android:background="@drawable/custom_texteditstyle"
-  />
+            android:hint="Enter your details"
+            android:paddingStart="10dp" />
+
         <Button
             android:id="@+id/saveTasks_btn"
             android:layout_width="match_parent"
-            android:backgroundTint="@color/pink"
-            android:textColor="@color/white"
-            android:text="SAVE"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+
             android:background="@drawable/custom_button"
-            android:layout_marginTop="5dp"
-            android:layout_height="50dp"/>
+            android:backgroundTint="@color/pink"
+            android:text="SAVE"
+            android:textColor="@color/white" />
+
         <Button
             android:id="@+id/cancel_btn"
             android:layout_width="match_parent"
-            android:backgroundTint="@color/pink"
-            android:textColor="@color/white"
-            android:text="Cancel"
-            android:layout_marginTop="3dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+
             android:background="@drawable/custom_button"
-            android:layout_height="50dp"/>
+            android:backgroundTint="@color/pink"
+            android:text="Cancel"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>
