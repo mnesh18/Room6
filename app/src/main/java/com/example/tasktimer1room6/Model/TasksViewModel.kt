@@ -24,6 +24,12 @@ class TasksViewModel (application: Application): AndroidViewModel(application) {
         return tasks
     }
 
+    fun updateTask(task: Task) {
+        CoroutineScope(IO).launch {
+            taskDao.UpdateTask(task)
+        }
+    }
+
     fun deleteTask(task: Task) {
         CoroutineScope(IO).launch {
             taskDao.DeleteTask(task)
