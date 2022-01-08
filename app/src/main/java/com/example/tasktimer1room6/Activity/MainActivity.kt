@@ -3,24 +3,24 @@ package com.example.tasktimer1room6.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.widget.Button
 import com.example.tasktimer1room6.R
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var handler: Handler
+    private lateinit var runnable: Runnable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
-
-      val addTask_btn = findViewById<Button>(R.id.btn_addTask)
-        addTask_btn.setOnClickListener {
-            val intent = Intent(this, AddActivity::class.java)
-            startActivity(intent)
+        setContentView(R.layout.activity_main)
+        startMainActivity()
+    }
+    private fun startMainActivity() {
+        runnable = Runnable {
+            startActivity(Intent(this,HomeActivity::class.java))
+            finish()
         }
-
-        val viewTask_btn = findViewById<Button>(R.id.btn_viewTask)
-        viewTask_btn.setOnClickListener {
-            val intent = Intent(this, ViewActivity::class.java)
-            startActivity(intent)
-        }
+        handler = Handler()
+        handler.postDelayed(runnable, 3000)
     }
 }
