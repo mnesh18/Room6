@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import com.example.tasktimer1room6.Model.TasksViewModel
 import com.example.tasktimer1room6.R
@@ -39,8 +40,19 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun AddNewTask() {
-        tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString(), "00:00:00"))
-        val intent = Intent(this , HomeActivity::class.java)
-        startActivity(intent)
+        val test = tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString(), "00:00:00"))
+        if (test != null){
+            Toast.makeText(this@AddActivity, "Added successfully", Toast.LENGTH_SHORT).show()
+            addDetails_ed.clearFocus()
+            addDetails_ed.text.clear()
+            addTasks_ed.clearFocus()
+            addTasks_ed.text.clear()
+        } else {
+            Toast.makeText(this@AddActivity, "Not added, try again", Toast.LENGTH_SHORT).show()
+            addDetails_ed.clearFocus()
+            addDetails_ed.text.clear()
+            addTasks_ed.clearFocus()
+            addTasks_ed.text.clear()
+        }
     }
 }
