@@ -24,6 +24,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Add Tasks"
+         android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
             android:textColor="@color/white"
             android:background="@drawable/custom_buttontwo"
             android:textSize="19dp" />
@@ -36,6 +38,8 @@
             android:id="@+id/btn_viewTask"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+          android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
             android:text="View Tasks"
             android:textColor="@color/white"
             android:background="@drawable/custom_button"
