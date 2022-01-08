@@ -5,6 +5,7 @@ import android.os.SystemClock
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.tasktimer1room6.Activity.TimerActivity
 import com.example.tasktimer1room6.Activity.ViewActivity
@@ -35,6 +36,7 @@ class RVAdapter (val activity: ViewActivity) : RecyclerView.Adapter<RVAdapter.It
             }
             delete_btn.setOnClickListener {
                 activity.tasksViewModel.deleteTask(item)
+                Toast.makeText(activity, "Task deleted", Toast.LENGTH_SHORT).show()
             }
             item_card.setOnClickListener {
                 val data = Task( list[position].id, list[position].name, list[position].description, list[position].time)
