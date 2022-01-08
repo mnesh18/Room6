@@ -33,7 +33,7 @@ class AddActivity : AppCompatActivity() {
         saveTasks_btn.setOnClickListener { AddNewTask() }
 
         back_btn.setOnClickListener {
-            val intent = Intent(this , MainActivity::class.java)
+            val intent = Intent(this , HomeActivity::class.java)
             startActivity(intent)
         }
     }

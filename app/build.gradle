@@ -57,4 +57,9 @@ dependencies {
     kapt("androidx.room:room-compiler:2.4.0")
     implementation("androidx.room:room-ktx:2.4.0")
 
+
+
+    //gif image
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+
 }
