@@ -9,4 +9,5 @@ data class Task(
     @PrimaryKey(autoGenerate = true)
     val id: Int,
     val name:String,
-    val description: String): Serializable
+    val description: String,
+    val time: String): Serializable
