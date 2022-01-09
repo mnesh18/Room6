@@ -1,9 +1,13 @@
 package com.example.tasktimer1room6.Adapter
 
+import android.content.Intent
+import android.os.SystemClock
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.example.tasktimer1room6.Activity.TimerActivity
 import com.example.tasktimer1room6.Activity.ViewActivity
 import com.example.tasktimer1room6.R
 import com.example.tasktimer1room6.Room.Task
@@ -24,12 +28,21 @@ class RVAdapter (val activity: ViewActivity) : RecyclerView.Adapter<RVAdapter.It
         holder.itemView.apply {
             task_tv.text = item.name
             details_tv.text = item.description
-            time.text = item.time
 
+            if (item.time != "0") {
+                time.base = SystemClock.elapsedRealtime() + item.time.toLong()
+            } else {
+                time.base = SystemClock.elapsedRealtime()
+            }
             delete_btn.setOnClickListener {
                 activity.tasksViewModel.deleteTask(item)
+                Toast.makeText(activity, "Task deleted", Toast.LENGTH_SHORT).show()
             }
             item_card.setOnClickListener {
+                val data = Task( list[position].id, list[position].name, list[position].description, list[position].time)
+                val intent = Intent(holder.itemView.context, TimerActivity::class.java)
+                intent.putExtra("timer",data)
+                holder.itemView.context.startActivity(intent)
             }
         }
     }
@@ -39,5 +52,10 @@ class RVAdapter (val activity: ViewActivity) : RecyclerView.Adapter<RVAdapter.It
     fun update(task: List<Task>){
         this.list = task
         notifyDataSetChanged()
+    }
+
+    fun get() : List<Task>{
+        notifyDataSetChanged()
+        return this.list
     }
 }
