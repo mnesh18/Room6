@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -36,10 +37,11 @@
 
                 <ImageButton
                     android:id="@+id/delete_btn"
-                    android:layout_width="15dp"
-                    android:layout_height="19dp"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
                     android:layout_margin="5dp"
-                    android:src="@drawable/delete" />
+                    android:src="@drawable/delete"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
             </LinearLayout>
 
             <LinearLayout

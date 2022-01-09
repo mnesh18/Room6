@@ -26,7 +26,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/newfont"
-            android:text="Project name "
+            android:text="I CAN DO IT !!"
             android:textAlignment="center"
             android:textColor="#953616"
             android:textSize="60dp"
