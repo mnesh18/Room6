@@ -4,66 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
+    android:background="#FF3A8178"
     tools:context=".Activity.TimerActivity">
 
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginTop="88dp"
+        android:src="@drawable/tasks"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="376dp"
+        android:layout_height="280dp"
+        android:background="@drawable/custom_texteditstyle"
+        android:backgroundTint="@color/white"
         android:orientation="vertical"
-        android:background="#80EAEAEA"
-        android:layout_margin="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Chronometer
-            android:id="@+id/tv_timer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:textStyle="bold"
-            android:format="00:%s"
-            android:textSize="80dp"
-            android:textAlignment="center" />
+        app:layout_constraintTop_toBottomOf="@+id/gifImageView"
+        app:layout_constraintVertical_bias="0.288">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:gravity="center">
+            android:layout_margin="5dp"
+            android:orientation="horizontal">
+
+            <Chronometer
+                android:id="@+id/tv_timer"
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:format="00:%s"
+                android:textAlignment="center"
+                android:textColor="@color/teal_700"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="107dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/startTimer_btn"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_button"
-                android:layout_margin="20dp"
-                android:backgroundTint="@color/pink"
-                android:text="start"/>
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/start"
+                android:backgroundTint="@color/teal_700"
+
+                />
 
             <Button
                 android:id="@+id/stopTimer_btn"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/custom_button"
-                android:backgroundTint="@color/pink"
-                android:layout_margin="20dp"
-                android:text="reset"/>
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/restart"
+                android:backgroundTint="@color/teal_700" />
 
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/back"
+                android:backgroundTint="@color/teal_700"
+
+                />
+        </LinearLayout>
     </LinearLayout>
 
-        <Button
-            android:id="@+id/btnBack"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/custom_button"
-            android:backgroundTint="@color/pink"
-            android:layout_margin="20dp"
-            android:layout_gravity="center"
-            android:text="Back"/>
-
-</LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

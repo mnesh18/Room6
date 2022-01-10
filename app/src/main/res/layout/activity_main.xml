@@ -5,22 +5,24 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.MainActivity"
-    android:background="@color/green">
+    android:background="@color/teal_700">
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="400dp"
+        android:layout_height="595dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <pl.droidsonroids.gif.GifImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/tasks"
             android:layout_marginTop="90dp"
-            />
+            android:src="@drawable/tasks" />
 
         <TextView
             android:layout_width="match_parent"
@@ -28,8 +30,8 @@
             android:fontFamily="@font/newfont"
             android:text="I CAN DO IT !!"
             android:textAlignment="center"
-            android:textColor="#953616"
-            android:textSize="60dp"
+            android:textColor="@color/white"
+            android:textSize="40dp"
 
             />
 
