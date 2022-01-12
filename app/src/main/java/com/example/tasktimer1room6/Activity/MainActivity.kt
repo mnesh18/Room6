@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         startMainActivity()
     }
+
     private fun startMainActivity() {
         runnable = Runnable {
             startActivity(Intent(this,HomeActivity::class.java))

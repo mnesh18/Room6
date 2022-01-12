@@ -40,8 +40,16 @@ class AddActivity : AppCompatActivity() {
     }
 
     private fun AddNewTask() {
-        val test = tasksViewModel.addTask(Task(0,addTasks_ed.text.toString(), addDetails_ed.text.toString(), "0"))
-        if (test != null){
+        if (addTasks_ed.text.isNotBlank()) {
+             tasksViewModel.addTask(
+                Task(
+                    0,
+                    addTasks_ed.text.toString(),
+                    addDetails_ed.text.toString(),
+                    "0"
+                )
+            )
+
             Toast.makeText(this@AddActivity, "Added successfully", Toast.LENGTH_SHORT).show()
             addDetails_ed.clearFocus()
             addDetails_ed.text.clear()
@@ -49,10 +57,7 @@ class AddActivity : AppCompatActivity() {
             addTasks_ed.text.clear()
         } else {
             Toast.makeText(this@AddActivity, "Not added, try again", Toast.LENGTH_SHORT).show()
-            addDetails_ed.clearFocus()
-            addDetails_ed.text.clear()
-            addTasks_ed.clearFocus()
-            addTasks_ed.text.clear()
         }
     }
+
 }

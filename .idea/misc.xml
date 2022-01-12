@@ -3,15 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/custom_button.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/custom_buttontwo.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/custom_texteditstyle.xml" value="0.20052083333333334" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.20052083333333334" />
         <entry key="app/src/main/res/font/font.xml" value="0.25416666666666665" />
         <entry key="app/src/main/res/layout/activity_home.xml" value="0.15055040888535298" />
         <entry key="app/src/main/res/layout/activity_home2.xml" value="0.22554347826086957" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2833333333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1558298430286731" />
         <entry key="app/src/main/res/layout/activity_tasks.xml" value="0.26875" />
+        <entry key="app/src/main/res/layout/activity_timer.xml" value="0.16145833333333334" />
         <entry key="app/src/main/res/layout/activity_view_task.xml" value="0.11655189364373202" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.22554347826086957" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.22554347826086957" />
-        <entry key="app/src/main/res/layout/task_item.xml" value="0.8110177476069688" />
+        <entry key="app/src/main/res/layout/task_item.xml" value="0.27696109300536464" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2935185185185185" />
       </map>
     </option>
